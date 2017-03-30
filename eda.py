@@ -6,11 +6,11 @@ import seaborn as sns
 plt.style.use('fivethirtyeight')
 
 
-df = pd.read_csv('kaggle-boston-marathon-2016/input/marathon_results_2016.csv')
+df = pd.read_csv('Desktop/kaggle-boston-marathon-2016/input/marathon_results_2016.csv')
 
-top100_runners = df[0:100]
+top1000_runners = df[0:1000]
 
-runners = top100_runners
+runners = top1000_runners
 
 
 ax = sns.boxplot(x="M/F", y="Overall", data=runners)
